@@ -1,13 +1,15 @@
 import pygame
 import time
+from pygame import display
 
 pygame.init()
 
 # Resolution for the display
-X = 1000
-Y = 760
+X = 500
+Y = 300
 
-display = pygame.display.set_mode((X,Y))
+DISPLAY = display.set_mode((X,Y))
+display.set_caption("MENU")
 
 # Event Handler
 while True:
