@@ -11,10 +11,16 @@ Y = 300
 DISPLAY = display.set_mode((X,Y))
 display.set_caption("MENU")
 
-# Event Handler
 while True:
+    
+    # Backgroud Color
+    DISPLAY.fill((202, 228, 241))
+
+    # Event Handler
     for event in pygame.event.get():
+        # Game Quits
         if event.type == pygame.QUIT:
            False()
-        
+    display.update()
+    
 pygame.quit()
