@@ -1,5 +1,6 @@
 import pygame
 import time
+from time import sleep
 from pygame import display
 
 pygame.init()
